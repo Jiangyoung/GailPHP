@@ -7,7 +7,7 @@ class App{
 		$action  = \Common\Http\Http::getGET('a','index');
 		
 		$GLOBALS['controller'] = $controller = ucwords(strtolower($controller));
-		$GLOBALS['action'] = $action = strtolower($controller);
+		$GLOBALS['action'] = $action = strtolower($action);
 		
 		$className = '\\App\\Controller\\'.$controller.'Con';
 		$action .= 'Action';

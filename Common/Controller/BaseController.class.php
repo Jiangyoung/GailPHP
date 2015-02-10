@@ -3,9 +3,8 @@ namespace Common\Controller;
 class BaseController{
 	private $view = null;
 	final function __construct(){
-		//初始化smarty模板
-		$smartyEngine = new \Common\Tpl\SmartyEngine();
-		$this->view = $smartyEngine->getEngine();
+		//设置smarty模板
+		$this->view = \Common\Tpl\SmartyEngine::getEngine();
 	}
 	function init(){
 
@@ -14,6 +13,7 @@ class BaseController{
 		$this->view->assign($key,$val);
 	}
 	function display(){
+		
 		$controller = $GLOBALS['controller'];
 		$action = $GLOBALS['action'];
 		
