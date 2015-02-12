@@ -3,5 +3,6 @@ return array(
 'host'	=>	'localhost',
 'user'	=>	'root',
 'passwd'=>	'root',
-'dbname'=>	''
+'dbname'=>	'gailc',
+'tbprefix'=>'cg_'
 );

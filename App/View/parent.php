@@ -2,10 +2,9 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-	<title>{{$title}}</title>
+	<title><?php echo $this->title?></title>
 </head>
 <body>
-	{{block name="container"}}
-	{{/block}}
+	<p><?php echo $this->key1; ?></p>
 </body>
 </html>
