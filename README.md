@@ -1,5 +1,6 @@
 GailPHP 
 目录结构：
+-
 	App
 	>	Controller	--	控制器目录
 
